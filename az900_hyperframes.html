@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>AZ-900 | مفاهيم السحابة</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1920px; height: 1080px; background: #0F172A; overflow: hidden; }
+#root { position: relative; width: 1920px; height: 1080px; background: #0F172A; font-family: Arial, "Segoe UI", "Noto Sans Arabic", sans-serif; color: #FFFFFF; direction: rtl; overflow: hidden; }
+.scene { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; padding: 50px 90px; }
+.hd { text-align: center; margin-bottom: 30px; }
+.hd h1 { font-size: 76px; color: #50E6FF; font-weight: 700; }
+.hd p { font-size: 32px; color: #FFFFFF; direction: ltr; margin-top: 6px; }
+.card { border: 4px solid #0078D4; border-radius: 28px; background: rgba(0,120,212,0.15); padding: 28px 36px; text-align: center; }
+.card h2 { font-size: 54px; color: #00A4EF; font-weight: 700; }
+.card .en { font-size: 28px; color: #50E6FF; direction: ltr; margin: 4px 0 10px; }
+.card p { font-size: 36px; line-height: 1.5; color: #FFFFFF; }
+.card.light { border-color: #50E6FF; background: rgba(80,230,255,0.12); }
+.card.light h2 { color: #50E6FF; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+.tools { margin-top: 36px; }
+.tools p { font-size: 34px; }
+.lt { direction: ltr; unicode-bidi: isolate; }
+.intro { text-align: center; font-size: 40px; margin-bottom: 26px; }
+.tbl { display: grid; grid-template-columns: 520px repeat(4, 1fr); gap: 6px; }
+.th { font-size: 40px; color: #50E6FF; text-align: center; font-weight: 700; padding: 8px; }
+.rl { font-size: 34px; background: #0F172A; border: 2px solid #0078D4; padding: 12px 20px; border-radius: 10px; display: flex; align-items: center; }
+.cell { font-size: 32px; font-weight: 700; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding: 12px; opacity: 0; }
+.cu { background: #0078D4; color: #FFFFFF; }
+.pr { background: #50E6FF; color: #0F172A; }
+.sh { background: #FFB900; color: #0F172A; }
+.note { margin-top: 28px; text-align: center; font-size: 34px; color: #FFFFFF; }
+.flow { display: flex; align-items: center; justify-content: center; gap: 60px; margin: 40px 0; }
+.flow .card { width: 640px; }
+.arrow { font-size: 110px; color: #50E6FF; font-weight: 700; }
+.paygo { text-align: center; font-size: 46px; color: #FFFFFF; margin-bottom: 10px; }
+.ben { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; margin-top: 30px; }
+.ben .card { border-color: #00A4EF; }
+.q { text-align: center; margin-bottom: 44px; }
+.q h3 { font-size: 48px; color: #FFFFFF; font-weight: 700; }
+.q p { font-size: 44px; color: #50E6FF; margin-top: 14px; }
+.hide { opacity: 0; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="az900-cloud-concepts" data-start="0" data-duration="46" data-width="1920" data-height="1080">
+
+<div id="s1" class="scene clip" data-start="0" data-duration="12" data-track-index="0">
+<div class="hd hide" id="s1-hd"><h1>نماذج السحابة</h1><p>Cloud Models Overview</p></div>
+<div class="grid2">
+<div class="card hide" id="s1-c1"><h2>سحابة خاصة</h2><div class="en">Private Cloud</div><p>بيئة سحابية يستخدمها كيان واحد، تحكم أكبر لفريق تقنية المعلومات بتكلفة أكبر</p></div>
+<div class="card hide" id="s1-c2"><h2>سحابة عامة</h2><div class="en">Public Cloud</div><p>يُنشئها ويصونها موفر سحابة خارجي، ومتاحة لأي شخص يريد شراء الخدمات</p></div>
+<div class="card light hide" id="s1-c3"><h2>سحابة مختلطة</h2><div class="en">Hybrid Cloud</div><p>تجمع وتصل بين السحب العامة والخاصة لتوفير أقصى مرونة وأمان</p></div>
+<div class="card hide" id="s1-c4"><h2>السحب المتعددة</h2><div class="en">Multi-Cloud</div><p>استخدام عدة مزودي سحابة عامة معاً لخدمات مختلفة أو لتسهيل الترحيل</p></div>
+</div>
+<div class="card light tools hide" id="s1-c5"><h2>تقنيات الربط والإدارة</h2><p><span class="lt">Azure Arc</span>: إدارة البيئات المتعددة والهجينة &nbsp;•&nbsp; <span class="lt">Azure VMware</span>: تشغيل أحمال VMware داخل Azure</p></div>
+</div>
+
+<div id="s2" class="scene clip" data-start="12" data-duration="16" data-track-index="0">
+<div class="hd hide" id="s2-hd"><h1>نموذج المسؤولية المشتركة</h1><p>Shared Responsibility Model</p></div>
+<div class="intro hide" id="s2-intro">في مركز البيانات المحلي أنت مسؤول عن كل شيء، وفي السحابة تتم مشاركة المسؤوليات</div>
+<div class="tbl hide" id="s2-tbl">
+<div></div><div class="th">محلي</div><div class="th lt">IaaS</div><div class="th lt">PaaS</div><div class="th lt">SaaS</div>
+<div class="rl">البيانات والمعلومات</div><div class="cell cu c0 g-top">العميل</div><div class="cell cu c1 g-top">العميل</div><div class="cell cu c2 g-top">العميل</div><div class="cell cu c3 g-top">العميل</div><div class="rl">الأجهزة</div><div class="cell cu c0 g-top">العميل</div><div class="cell cu c1 g-top">العميل</div><div class="cell cu c2 g-top">العميل</div><div class="cell cu c3 g-top">العميل</div><div class="rl">الحسابات والهويات</div><div class="cell cu c0 g-top">العميل</div><div class="cell cu c1 g-top">العميل</div><div class="cell cu c2 g-top">العميل</div><div class="cell cu c3 g-top">العميل</div><div class="rl">التطبيقات</div><div class="cell cu c0 g-mid">العميل</div><div class="cell cu c1 g-mid">العميل</div><div class="cell sh c2 g-mid">مشترك</div><div class="cell pr c3 g-mid">المزود</div><div class="rl">نظام التشغيل</div><div class="cell cu c0 g-mid">العميل</div><div class="cell cu c1 g-mid">العميل</div><div class="cell pr c2 g-mid">المزود</div><div class="cell pr c3 g-mid">المزود</div><div class="rl">المضيفون الفعليون</div><div class="cell cu c0 g-bot">العميل</div><div class="cell pr c1 g-bot">المزود</div><div class="cell pr c2 g-bot">المزود</div><div class="cell pr c3 g-bot">المزود</div><div class="rl">الشبكة الفعلية</div><div class="cell cu c0 g-bot">العميل</div><div class="cell pr c1 g-bot">المزود</div><div class="cell pr c2 g-bot">المزود</div><div class="cell pr c3 g-bot">المزود</div><div class="rl">مركز البيانات</div><div class="cell cu c0 g-bot">العميل</div><div class="cell pr c1 g-bot">المزود</div><div class="cell pr c2 g-bot">المزود</div><div class="cell pr c3 g-bot">المزود</div>
+</div>
+<div class="note hide" id="s2-note">IaaS: معظم المسؤولية على العميل &nbsp;•&nbsp; PaaS: توازن &nbsp;•&nbsp; SaaS: معظمها على المزود</div>
+</div>
+
+<div id="s3" class="scene clip" data-start="28" data-duration="9" data-track-index="0">
+<div class="hd hide" id="s3-hd"><h1>النموذج القائم على الاستهلاك</h1><p>Consumption-Based Model &amp; Pricing</p></div>
+<div class="paygo hide" id="s3-top">ادفع فقط مقابل ما تستهلكه (Pay-as-you-go)</div>
+<div class="flow">
+<div class="card hide" id="s3-capex"><h2>الإنفاق الرأسمالي</h2><div class="en">CapEx</div><p>شراء وتجهيز مراكز البيانات مسبقاً</p></div>
+<div class="arrow hide" id="s3-arrow">&#8592;</div>
+<div class="card light hide" id="s3-opex"><h2>الإنفاق التشغيلي</h2><div class="en">OpEx</div><p>دفع تكاليف الاستخدام المستمر</p></div>
+</div>
+<div class="ben">
+<div class="card hide" id="s3-b1"><p>لا تكاليف مقدمة للأجهزة</p></div>
+<div class="card hide" id="s3-b2"><p>مرونة كاملة لتوسيع الموارد وتقليصها حسب الطلب</p></div>
+<div class="card hide" id="s3-b3"><p>إلغاء هدر السعة الخاملة</p></div>
+</div>
+</div>
+
+<div id="s4" class="scene clip" data-start="37" data-duration="9" data-track-index="0">
+<div class="hd hide" id="s4-hd"><h1>اختبر معلوماتك</h1><p>Review &amp; Quiz</p></div>
+<div class="q"><h3 class="hide" id="s4-q1">١. ما هي حوسبة السحابة؟</h3><p class="hide" id="s4-a1">تقديم خدمات الحوسبة عبر الإنترنت</p></div>
+<div class="q"><h3 class="hide" id="s4-q2">٢. ما النموذج الذي يدمج بين السحابة العامة والخاصة؟</h3><p class="hide" id="s4-a2">السحابة المختلطة (Hybrid Cloud)</p></div>
+<div class="q"><h3 class="hide" id="s4-q3">٣. أي خدمة سحابية تضع المسؤولية الأكبر على العميل؟</h3><p class="hide" id="s4-a3">البنية التحتية كخدمة (IaaS)</p></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+const show = (sel, t, d = 0.6, y = 30) => tl.fromTo(sel, { opacity: 0, y: y }, { opacity: 1, y: 0, duration: d, ease: "power2.out" }, t);
+const fade = (sel, t) => tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out", stagger: 0.04 }, t);
+const out = (sel, t) => tl.to(sel, { opacity: 0, duration: 0.4 }, t);
+
+/* المشهد 1: 0s - 12s */
+show("#s1-hd", 0.2);
+show("#s1-c1", 1.0);
+show("#s1-c2", 3.0);
+show("#s1-c3", 5.0);
+show("#s1-c4", 7.0);
+show("#s1-c5", 9.0);
+out("#s1", 11.6);
+
+/* المشهد 2: 12s - 28s */
+show("#s2-hd", 12.2);
+show("#s2-intro", 12.8);
+show("#s2-tbl", 14.0, 0.6, 0);
+fade("#s2 .c0", 14.6);
+fade("#s2 .g-top:not(.c0)", 16.6);
+fade("#s2 .g-bot:not(.c0)", 18.6);
+fade("#s2 .g-mid.c1", 20.6);
+fade("#s2 .g-mid.c2", 22.6);
+fade("#s2 .g-mid.c3", 24.6);
+show("#s2-note", 25.0);
+out("#s2", 27.6);
+
+/* المشهد 3: 28s - 37s */
+show("#s3-hd", 28.2);
+show("#s3-top", 28.8);
+show("#s3-capex", 29.3);
+show("#s3-arrow", 30.0, 0.5, 0);
+show("#s3-opex", 30.6);
+show("#s3-b1", 32.6);
+show("#s3-b2", 33.1);
+show("#s3-b3", 33.6);
+out("#s3", 36.6);
+
+/* المشهد 4: 37s - 46s */
+show("#s4-hd", 37.2);
+show("#s4-q1", 38.0); show("#s4-a1", 39.0);
+show("#s4-q2", 40.0); show("#s4-a2", 41.0);
+show("#s4-q3", 42.0); show("#s4-a3", 43.0);
+out("#s4", 45.6);
+
+window.__timelines["az900-cloud-concepts"] = tl;
+</script>
+</div>
+</body>
+</html>
